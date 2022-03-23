@@ -1,4 +1,6 @@
-export default function Nav(props) {
+import React from 'react';
+
+function Nav(props) {
   const {setPage} = props
   return (
     <nav>
@@ -8,3 +10,5 @@ export default function Nav(props) {
     </nav>
   );
 }
+
+export default Nav;
