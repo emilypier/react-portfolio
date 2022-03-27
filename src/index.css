@@ -106,10 +106,20 @@ h2 {
 
 /* about me  ----------------------------------*/
 .about {
-  width: 600px;
-  height: 200px;
-  display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.about img {
+  border-radius: 190px;
+  height: 15rem;
+  width: 15rem;
+  margin: 10px 5px;
+  padding: auto 2rem
+}
+
+.about span {
+  color: var(--color4)
 }
 
 
@@ -129,7 +139,7 @@ h2 {
 
 .project h3 {
   font-family: "Barlow Semi Condensed", sans-serif;
-  padding: 10px 0px;
+  padding: 10px 0;
   line-height: 1.3;
   font-size: 18px;
   font-style: bold;
