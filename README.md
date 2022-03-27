@@ -17,9 +17,9 @@
 A REACT application that includes an About Me section, portfolio, link to download my resume, and to contact me.
 
 ## Usage
-Click [here](link) to see my React portfolio.
+Click [here](http://emilypier.github.io/react-portfolio) to see my React portfolio.
 
-![My React Portfolio.](/docs/assets/note-taker-image.png)
+![My React Portfolio.](/src/assets/images/react-portfolio-projects.png)
 
 ## License
 This application is covered under MIT license.
