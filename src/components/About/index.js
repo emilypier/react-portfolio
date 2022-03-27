@@ -9,7 +9,7 @@ function About() {
       {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
       <div >
         <p>
-        My name's Emily Pierson. I'm a photographer, editor, artist and web developer from Cincinnati, Ohio. Some of my favorite pastimes include reading, discovering new music, collecting vintage clothes and writing.
+        Hi! My name is Emily Pierson. I'm Full-Stack Web Developer with copyediting experience. I'v recently earned a certificate in Full-Stack Web Development from the Ohio State University, with newly developed skills in JavaScript, CSS, HTML, and Node.js. I have strengths in organization, attention to detail, and meeting deadlines. I have an aptitude to work independently and collaboratively in a group to ensure scalable results for stakeholders. I contributed to MERN app using agile development and OOP techniques. I’m motivated to learn new technologies and problem-solve.
       </p>
       </div>
     </section>

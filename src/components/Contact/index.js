@@ -33,7 +33,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="my-3"> 
+    <section className="my-3 contact"> 
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -56,6 +56,8 @@ function ContactForm() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      <p> 513.444.8826</p>
+      <a href="mailto:piersoee@gmail.com">piersoee@gmail.com</a>
     </section>
   );
 }

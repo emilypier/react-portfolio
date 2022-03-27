@@ -28,7 +28,13 @@ li {
   list-style: none;
   padding-right: 10px;
 }
+
+h1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
 /* header  ----------------------------------*/
+
 header {
   height: 50px;
   background-color: var(--color2);
@@ -50,7 +56,7 @@ header li, a {
   justify-content: space-evenly;
 }
 
-header li a:hover {
+header li:hover {
   color: var(--color4);
   cursor: pointer;
 }
@@ -80,7 +86,7 @@ h2 {
   text-align: right;
 }
 
-/* main content */
+/* main content container ---------------------*/
 .mainContent{
   height: 85vh;
   margin: 2rem;  
@@ -99,15 +105,13 @@ h2 {
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 25px;
 }
 
 .project {
   background-color: var(--color3);
   margin: 10px 5px;
-  border-radius: 10px;
-  width: 200px;
+  width: 400px;
   height: 200px;
 }
 
@@ -122,9 +126,8 @@ h2 {
 }
 
 .project img {
-  width: 30%;
-  height: 30%;
-  opacity: 0.5;
+  width: 90%;
+  height: 90%;
 }
 
 .project a:hover {
@@ -134,13 +137,13 @@ h2 {
 
 /* resume ---------------------------------- */
 
-.resume a {
+.resume a, .contact a {
   font-family: "Barlow Semi Condensed", sans-serif;
   text-decoration: none;
   color: var(--color2);
 }
 
-.resume a:hover {
+.resume a:hover, .contact a:hover{
   color: var(--color4);
   cursor: pointer;
 }
@@ -150,9 +153,6 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-#contact-form {
   justify-items: center;
 }
 
