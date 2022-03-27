@@ -2,8 +2,8 @@ import Nav from "../Navigation";
 
 function Header({ name }) {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="header">
+      <header>
         {/* <img src={} className="App-logo" alt="logo" /> */}
 
         <h1> {name}</h1>

@@ -1,13 +1,179 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color1: #78a1bb;
+  --color2: #4c4b63;
+  --color3: #ebf5ee;
+  --color4: #ce7da5;
+  --shadow: #2a2a36;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  height: 100vh;
+
+}
+
+body {
+  color: var(--color2);
+  background-color: var(--color3);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+  padding-right: 10px;
+}
+/* header  ----------------------------------*/
+header {
+  height: 50px;
+  background-color: var(--color2);
+  color: white;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+header li, a {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-decoration: none;
+  color: white;
+  justify-content: space-evenly;
+}
+
+header li a:hover {
+  color: var(--color4);
+  cursor: pointer;
+}
+
+nav {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: white;
+  font: "Barlow Semi Condensed", sans-serif;
+  align-items: center;
+  justify-items: space-around;  
+}
+
+/* all h2's have class of "title" */
+h2 {
+  display: flex;
+  align-items: top;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 28px;
+  color: var(--color2);
+  width: 170px;
+  text-align: right;
+}
+
+/* main content */
+.mainContent{
+  height: 85vh;
+  margin: 2rem;  
+}
+
+/* about me  ----------------------------------*/
+.about {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* my work ---------------------------------- */
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.project {
+  background-color: var(--color3);
+  margin: 10px 5px;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.project h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 10px 0px;
+  line-height: 1.3;
+  font-size: 18px;
+  font-style: bold;
+  color: var(--color2);
+  text-align: left;
+}
+
+.project img {
+  width: 30%;
+  height: 30%;
+  opacity: 0.5;
+}
+
+.project a:hover {
+  content: "";
+  opacity: 0.5;
+}
+
+/* resume ---------------------------------- */
+
+.resume a {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.resume a:hover {
+  color: var(--color4);
+  cursor: pointer;
+}
+
+/* contact me ---------------------------------- */
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact-form {
+  justify-items: center;
+}
+
+button {
+  border-radius: 5px;
+}
+
+/* footer ---------------------------------- */
+footer {
+  background-color: var(--color2);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0 5px;
+  color: var(--color4);
+  font-size: 1.2em;
 }
