@@ -14,7 +14,7 @@
 * [Questions](#questions)
 
 ## Description 
-A website/application that offers/uses
+A REACT application that includes an About Me section, portfolio, link to download my resume, and to contact me.
 
 ## Usage
 Click [here](link) to see my React portfolio.

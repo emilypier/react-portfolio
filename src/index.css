@@ -33,6 +33,17 @@ h1 {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+a {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-decoration: none;
+  color: var(--color2);
+}
+
+a:hover{
+  color: var(--color4);
+  cursor: pointer;
+}
+
 /* header  ----------------------------------*/
 
 header {
@@ -49,7 +60,7 @@ header {
   flex-direction: row;
 }
 
-header li, a {
+header li, header a {
   font-family: "Barlow Semi Condensed", sans-serif;
   text-decoration: none;
   color: white;
@@ -170,12 +181,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-footer p {
+footer a {
   font-family: "Barlow Semi Condensed", sans-serif;
   margin: 0 5px;
-  color: var(--color4);
-  font-size: 1.2em;
+  color: var(--color3);
 }
