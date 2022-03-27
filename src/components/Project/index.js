@@ -58,15 +58,18 @@ const Project = () => {
   return (
     <div className='projectContainer my-3'>
       {projects.map((project, key)=> (
-        <div key={key} className="col-sm project">
-          <a href={project.deployed}>
-            <img
-              src={project.image}
-              alt={project.name}
-            />
-          </a>
-        <h3>{project.name}</h3>
-        <p>{project.description}</p>
+        <div key={key} className="project card">
+          <div className='card-body'>
+            <a href={project.deployed}>
+              <img
+                class="card-img-top"
+                src={project.image}
+                alt={project.name}
+              />
+            </a>
+            <h3 className='card-title'>{project.name}</h3>
+            <p className='card-text'>{project.description}</p>
+          </div>
         </div>
       ))}
     </div>

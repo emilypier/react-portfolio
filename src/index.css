@@ -89,7 +89,8 @@ h2 {
 /* main content container ---------------------*/
 .mainContent{
   height: 85vh;
-  margin: 2rem;  
+  margin: 4rem;
+  justify-content: center;
 }
 
 /* about me  ----------------------------------*/
@@ -109,10 +110,10 @@ h2 {
 }
 
 .project {
-  background-color: var(--color3);
+  background-color: white;
   margin: 10px 5px;
-  width: 400px;
-  height: 200px;
+  width: 18rem;
+  border-radius: 10px;
 }
 
 .project h3 {
@@ -126,13 +127,14 @@ h2 {
 }
 
 .project img {
-  width: 90%;
-  height: 90%;
+  width: 230px;
+  height: 170px;
 }
 
 .project a:hover {
   content: "";
   opacity: 0.5;
+  cursor: pointer;
 }
 
 /* resume ---------------------------------- */

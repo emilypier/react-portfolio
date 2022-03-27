@@ -17,10 +17,9 @@
 A website/application that offers/uses
 
 ## Usage
-Watch the walkthrough video [here](link).
+Click [here](link) to see my React portfolio.
 
-![Image of Note Taker app in action.](/docs/assets/note-taker-image.png)
-
+![My React Portfolio.](/docs/assets/note-taker-image.png)
 
 ## License
 This application is covered under MIT license.
