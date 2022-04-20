@@ -1,8 +1,8 @@
 :root {
   --color1: #78a1bb;
-  --color2: #4c4b63;
+  --color2: #484186;
   --color3: #ebf5ee;
-  --color4: #ce7da5;
+  --color4: #c2c21d;
   --shadow: #2a2a36;
 }
 
@@ -19,7 +19,7 @@
 
 body {
   color: var(--color2);
-  background-color: var(--color3);
+  background-color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
@@ -108,18 +108,19 @@ h2 {
 .about {
   justify-content: center;
   align-items: center;
+  width: 30em;
+  /* margin: auto; */
 }
 
 .about img {
   border-radius: 190px;
-  height: 15rem;
-  width: 15rem;
-  margin: 10px 5px;
-  padding: auto 2rem
+  height: 10rem;
+  width: 10rem;
+  margin: auto 2rem;
 }
 
 .about span {
-  color: var(--color4)
+  color: var(--color4),
 }
 
 
@@ -164,6 +165,7 @@ h2 {
   font-family: "Barlow Semi Condensed", sans-serif;
   text-decoration: none;
   color: var(--color2);
+  transition: var(--color4) 1s;
 }
 
 .resume a:hover, .contact a:hover{
@@ -198,3 +200,21 @@ footer a {
   margin: 0 5px;
   color: var(--color3);
 }
+
+/* fade --------- */
+/* 
+.fade {
+  background-color: var(--color4);
+  color: #fff;
+  transition: background-color 1s;
+}
+
+.fade:hover {
+  background-color: var(--color1);
+}
+
+.fade:focus,
+.fade:active {
+  background-color: black;
+  transition: none;
+} */

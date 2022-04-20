@@ -21,6 +21,8 @@ Click [here](http://emilypier.github.io/react-portfolio) to see my React portfol
 
 ![My React Portfolio.](/src/assets/images/react-portfolio-projects.png)
 
+If running the app locally, run `npm start` in the root directory.
+
 ## License
 This application is covered under MIT license.
 
