@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import ContactForm from "./components/Contact";
+import Contact from "./components/Contact";
 import Nav from "./components/Navigation";
 // import "./App.css";
 import Project from "./components/Project";
