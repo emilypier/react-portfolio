@@ -1,9 +1,16 @@
-:root {
-  --color1: #78a1bb;
-  --color2: #484186;
+/* :root {
+  --color1: #d4a218;
+  --color2: #4b408f;
   --color3: #ebf5ee;
-  --color4: #c2c21d;
+  --color4: #2699e5;
   --shadow: #2a2a36;
+} */
+
+:root {
+  --color1: #FFDC5E;
+  --color2: #383F51;
+  --color3: #ebf5ee;
+  --color4: #b9b4f0;
 }
 
 * {
@@ -21,7 +28,7 @@
 body {
   color: var(--color2);
   background-color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1em;
 }
 
@@ -31,10 +38,10 @@ li {
 }
 
 h1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-left: 10px;
 }
 
-a {
+/* a {
   font-family: "Barlow Semi Condensed", sans-serif;
   text-decoration: none;
   color: var(--color2);
@@ -43,12 +50,26 @@ a {
 a:hover{
   color: var(--color4);
   cursor: pointer;
+} */
+
+a {
+  box-shadow: inset 0 0 0 0 var(--color4);
+  color: var(--color4);
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.container {
+a:hover {
+  box-shadow: inset 100px 0 0 0 var(--color4);
+  color: white;
+}
+
+/* main content container ---------------------*/
+.mainContent{
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 5rem;
+  justify-content: center;
 }
 
 /* header  ----------------------------------*/
@@ -67,7 +88,6 @@ header {
 }
 
 header li, header a {
-  font-family: "Barlow Semi Condensed", sans-serif;
   text-decoration: none;
   color: white;
   justify-content: space-evenly;
@@ -76,6 +96,7 @@ header li, header a {
 header li:hover {
   color: var(--color4);
   cursor: pointer;
+  transition: color .25s ease-in-out, .25s ease-in-out;
 }
 
 nav {
@@ -87,12 +108,10 @@ nav {
   font-weight: lighter;
   font-size: 1.2em;
   color: white;
-  font: "Barlow Semi Condensed", sans-serif;
   align-items: center;
   justify-items: space-around;  
 }
 
-/* all h2's have class of "title" */
 h2 {
   display: flex;
   align-items: top;
@@ -103,19 +122,12 @@ h2 {
   text-align: right;
 }
 
-/* main content container ---------------------*/
-.mainContent{
-  height: auto;
-  margin: 4rem;
-  justify-content: center;
-}
-
 /* about me  ----------------------------------*/
 .about {
   justify-content: center;
   align-items: center;
   width: 30em;
-  /* margin: auto; */
+  margin: auto;
 }
 
 .about img {
@@ -133,8 +145,14 @@ h2 {
 /* my work ---------------------------------- */
 .projectContainer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 0 25px;
+  padding: 30px 25px 100px 25px;
+}
+
+.project h2 {
+  width: auto;
+  display: block;
 }
 
 .project {
@@ -163,20 +181,18 @@ h2 {
   content: "";
   opacity: 0.5;
   cursor: pointer;
+  transition: color .25s ease-in-out, .25s ease-in-out;
+
 }
 
 /* resume ---------------------------------- */
 
-.resume a, .contact a {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  text-decoration: none;
-  color: var(--color2);
-  transition: var(--color4) 1s;
-}
-
-.resume a:hover, .contact a:hover{
-  color: var(--color4);
-  cursor: pointer;
+.resume {
+  padding: 30px 25px 100px 25px;
+  text-align: center;
+  justify-content: center;
+  width: 30em;
+  margin: auto;
 }
 
 /* contact me ---------------------------------- */
@@ -215,39 +231,3 @@ footer a {
   margin: 0 5px;
   color: var(--color3);
 }
-
-.contact a {
-  color: var(--color1);
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-
-/* fade --------- */
-
-.fade {
-  background-color: var(--color2);
-  animation-name: fadecolor;
-  animation-duration: 4s; }
-
-  @keyframes fade {
-    from {color: var(--color2); font-style: bold;}
-    to {color: var(--color4); font-style: none;}
-  }
-
-/* 
-.fade {
-  background-color: var(--color4);
-  color: #fff;
-  transition: background-color 1s;
-}
-
-.fade:hover {
-  background-color: var(--color1);
-}
-
-.fade:focus,
-.fade:active {
-  background-color: black;
-  transition: none;
-} */

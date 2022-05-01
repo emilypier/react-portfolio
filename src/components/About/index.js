@@ -5,7 +5,7 @@ function About() {
 
   return (
     <section className="my-3 about" >
-      <h1>About me</h1>
+      <h2>about me</h2>
       <img src={profilePic} alt="Emily with glasses"></img>
       <p>
         Hi! My name is <span>Emily Pierson</span>. 
