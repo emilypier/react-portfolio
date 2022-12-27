@@ -41,16 +41,16 @@ h1 {
   margin-left: 10px;
 }
 
-/* a {
+h2 {
+  display: flex;
+  align-items: top;
   font-family: "Barlow Semi Condensed", sans-serif;
-  text-decoration: none;
+  font-size: 28px;
   color: var(--color2);
+  padding: 30px 25px 0 0;
+  /* width: 170px; */
+  /* text-align: right; */
 }
-
-a:hover{
-  color: var(--color4);
-  cursor: pointer;
-} */
 
 a {
   text-decoration: none;
@@ -113,15 +113,6 @@ nav {
   justify-items: space-around;  
 }
 
-h2 {
-  display: flex;
-  align-items: top;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 28px;
-  color: var(--color2);
-  width: 170px;
-  text-align: right;
-}
 
 /* about me  ------------------------------------*/
 .about {
