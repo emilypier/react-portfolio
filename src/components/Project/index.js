@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 import projectsList from './projects';
 
 const Project = () => {
-  // const [projects, setProjects] = useState([]);
-  
-  // // const handleProjects = function() {
-  // //   setProjects(projectsList)
-  // // }
-
 
   return (
     <div>
@@ -20,6 +14,7 @@ const Project = () => {
             <div className='card-body'>
               <a href={project.deployed}>
                 <img
+                  id="projectImg"
                   class="card-img-top"
                   src={project.image}
                   alt={project.name}
