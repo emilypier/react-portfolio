@@ -8,15 +8,15 @@ function App() {
 
 
   return (
-    <div>
+    <section className="my-3">
       <header className="App-header">
         {/* <img src={} className="App-logo" alt="logo" /> */}
         <h1> Emily Pierson </h1>
         <Nav setPage={setPage} />
       </header>
-      <MainContainer  page={page} />
+      <MainContainer page={page} />
       <Footer />
-    </div>
+    </section>
   );
 }
 

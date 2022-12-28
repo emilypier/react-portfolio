@@ -4,11 +4,10 @@ import projectsList from './projects';
 const Project = () => {
 
   return (
-    <div>
-      <div> 
-        <h2>projects</h2>
-      </div>
-      <div className='projectContainer my-3'>
+    <section className="my-3">
+      <h2>projects</h2>
+      <div className='projectContainer'>
+        
         {projectsList.map((project, key)=> (
           <div key={key} className="project card">
             <div className='card-body'>
@@ -25,8 +24,9 @@ const Project = () => {
             </div>
           </div>
         ))}
+        
       </div>
-    </div>
+    </section>
   );
 };
 
